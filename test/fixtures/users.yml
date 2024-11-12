@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+verified:
+  email: johndoe@mail.com
+  password_digest: <%= BCrypt::Password.create("123456") %>
+  verified: true
+  name: John Doe
+
+unverified:
+  email: unverified@mail.com
+  password_digest: <%= BCrypt::Password.create("123456") %>
+  verified: false
+  name: Unverified User

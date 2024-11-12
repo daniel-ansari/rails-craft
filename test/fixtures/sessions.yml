@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: verified
+  user_agent: Chrome/112.0.0.0
+  ip_address: 1.1.1.1
+
+two:
+  user: verified
+  user_agent: Mozilla/5.0
+  ip_address: 2.2.2.2
