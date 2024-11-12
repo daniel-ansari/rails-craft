@@ -70,3 +70,4 @@ end
 gem "authentication-zero", "~> 4.0"
 gem "heroicon", "~> 1.0"
 gem "view_component", "~> 3.20"
+gem "solid_errors", "~> 0.6"
