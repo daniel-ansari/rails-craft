@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  extend Authenticator
+
   # authentification
   get "sign_in", to: "sessions#new"
   post "sign_in", to: "sessions#create"
@@ -17,6 +19,10 @@ Rails.application.routes.draw do
   namespace :user do
     resource :dashboard, only: [ :show ]
     resources :sessions, only: [ :index ]
+  end
+
+  authenticate :admin do
+    mount SolidErrors::Engine, at: "/solid_errors"
   end
 
   get "up" => "rails/health#show", :as => :rails_health_check
