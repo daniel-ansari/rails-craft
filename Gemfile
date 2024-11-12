@@ -67,5 +67,6 @@ group :test do
   gem "magic_test", git: "https://github.com/bullet-train-co/magic_test.git", branch: "main"
 end
 
-gem "authentication-zero", "~> 4.0.3"
+gem "authentication-zero", "~> 4.0"
 gem "heroicon", "~> 1.0"
+gem "view_component", "~> 3.20"
