@@ -1,0 +1,26 @@
+<div class="toast">
+  <%
+  alerts = {
+    info: "alert-info",
+    notice: "alert-info",
+    alert: "alert-warning",
+    success: "alert-success",
+    warning: "alert-warning",
+    error: "alert-error"
+  }
+  icons = {
+    info: "information-circle",
+    notice: "information-circle",
+    alert: "exclamation-triangle",
+    success: "check-circle",
+    warning: "exclamation-triangle",
+    error: "x-circle"
+  }
+  %>
+  <% flash.each_with_index do |(key, content), ind| %>
+    <div class="alert <%= alerts[key.to_sym] %>">
+        <%= heroicon icons[key.to_sym] || "information-circle", variant: :outline, options: {class: "h-8 w-8"} %>
+        <%= content %>
+    </div>
+  <% end %>
+</div>

@@ -54,6 +54,7 @@ en:
   forgot_password: Forgot your password?
   cancel: Cancel
   navbar:
+    greeting:  "Hi, %{name}"
     sessions: Sessions
     password: Password
   remember_me: Remember me

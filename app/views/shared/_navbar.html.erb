@@ -1,0 +1,6 @@
+
+<% if sign_in? %>
+  <%= render "shared/authenticated" %>
+<% else %>
+  <%= render "shared/unauthenticated" %>
+<% end %>

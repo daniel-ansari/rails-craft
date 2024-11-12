@@ -2,15 +2,15 @@ require "application_system_test_case"
 
 class Identity::PasswordResetsTest < ApplicationSystemTestCase
   setup do
-    @user = users(:lazaro_nixon)
+    @user = users(:verified)
     @sid = @user.generate_token_for(:password_reset)
   end
 
   test "sending a password reset email" do
     visit sign_in_url
-    click_on "Forgot your password?"
+    click_on I18n.t("forgot_password")
 
-    fill_in "Email", with: @user.email
+    fill_in "Your Email", with: @user.email
     click_on "Send password reset email"
 
     assert_text "Check your email for reset instructions"

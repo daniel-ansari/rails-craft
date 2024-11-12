@@ -1,0 +1,14 @@
+<div class="navbar shadow px-4">
+  <div class="justify-start">
+    <%= link_to root_path, class: "btn btn-ghost" do %>
+      Album Catalog
+    <% end %>
+  </div>
+  <div class="flex-grow"></div>
+  <div class="justify-end gap-4">
+    <div class="flex gap-4 items-center">
+      <%= link_to t("sign_up"), sign_up_path, class: "btn btn-primary btn-outline" %>
+      <%= link_to t("login"), sign_in_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>

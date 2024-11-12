@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+  layout "authentification"
+
   before_action :redirect_if_signed_in, only: %i[new]
 
   skip_before_action :authenticate!, only: %i[new create]
@@ -12,7 +14,7 @@ class SessionsController < ApplicationController
     user = User.authenticate_by(email: params[:email], password: params[:password])
     if user
       @session = user.sessions.create!
-      cookies.signed.permanent[:session_token] = {value: @session.id, httponly: true}
+      cookies.signed.permanent[:session_token] = { value: @session.id, httponly: true }
 
       redirect_to user_dashboard_path, notice: "Signed in successfully"
     else

@@ -5,18 +5,18 @@ Rails.application.routes.draw do
   get "sign_up", to: "registrations#new"
   post "sign_up", to: "registrations#create"
 
-  resources :sessions, only: [:show, :destroy]
-  resource :password, only: [:edit, :update]
+  resources :sessions, only: [ :show, :destroy ]
+  resource :password, only: [ :edit, :update ]
 
   namespace :identity do
-    resource :email, only: [:edit, :update]
-    resource :email_verification, only: [:show, :create]
-    resource :password_reset, only: [:new, :edit, :create, :update]
+    resource :email, only: [ :edit, :update ]
+    resource :email_verification, only: [ :show, :create ]
+    resource :password_reset, only: [ :new, :edit, :create, :update ]
   end
 
   namespace :user do
-    resource :dashboard, only: [:show]
-    resources :sessions, only: [:index]
+    resource :dashboard, only: [ :show ]
+    resources :sessions, only: [ :index ]
   end
 
   get "up" => "rails/health#show", :as => :rails_health_check

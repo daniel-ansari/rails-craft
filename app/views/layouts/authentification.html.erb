@@ -5,9 +5,11 @@
     <%= render 'magic_test/support' if Rails.env.test? %>
   </head>
 
-  <body class="min-h-[100vh-4rem]">
+  <body>
     <%= render "shared/navbar" %>
-    <%= yield %>
+    <div class="min-h-[calc(100vh-4rem)] w-full flex flex-col items-center justify-center">
+      <%= yield %>
+    </div>
     <%= render "shared/flashes" %>
   </body>
 </html>
