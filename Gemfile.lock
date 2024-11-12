@@ -123,12 +123,22 @@ GEM
     debug_inspector (1.2.0)
     drb (2.2.1)
     erubi (1.13.0)
+    ffi (1.17.0-aarch64-linux-gnu)
+    ffi (1.17.0-arm-linux-gnu)
+    ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0-x86-linux-gnu)
+    ffi (1.17.0-x86_64-darwin)
+    ffi (1.17.0-x86_64-linux-gnu)
     globalid (1.2.1)
       activesupport (>= 6.1)
     heroicon (1.0.0)
       rails (>= 5.2)
     highline (3.1.1)
       reline
+    hotwire-livereload (1.4.1)
+      actioncable (>= 6.0.0)
+      listen (>= 3.0.0)
+      railties (>= 6.0.0)
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
     i18n-tasks (1.0.14)
@@ -160,6 +170,9 @@ GEM
       childprocess (~> 5.0)
     letter_opener (1.10.0)
       launchy (>= 2.2, < 4)
+    listen (3.9.0)
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
     logger (1.6.1)
     loofah (2.23.1)
       crass (~> 1.0.2)
@@ -256,10 +269,17 @@ GEM
       zeitwerk (~> 2.6)
     rainbow (3.1.1)
     rake (13.2.1)
+    rb-fsevent (0.11.2)
+    rb-inotify (0.11.1)
+      ffi (~> 1.0)
     rbs (3.6.1)
       logger
     rdoc (6.7.0)
       psych (>= 4.0.0)
+    redis (5.3.0)
+      redis-client (>= 0.22.0)
+    redis-client (0.22.2)
+      connection_pool
     regexp_parser (2.9.2)
     reline (0.5.11)
       io-console (~> 0.5)
@@ -360,6 +380,7 @@ DEPENDENCIES
   cssbundling-rails
   debug
   heroicon (~> 1.0)
+  hotwire-livereload
   i18n-tasks
   i18n_generators
   jbuilder
@@ -369,6 +390,7 @@ DEPENDENCIES
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 7.2.2)
+  redis (>= 4.0.1)
   rubocop-rails-omakase
   ruby-lsp
   ruby-lsp-rails
