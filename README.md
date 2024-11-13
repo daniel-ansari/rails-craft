@@ -1,3 +1,5 @@
+# Album Catalog: Album Catalog Test Assignment
+
 # Rails-craft: Ruby on Rails Starter Kit
 
 ## Introduction
