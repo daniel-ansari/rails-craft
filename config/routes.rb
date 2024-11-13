@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   namespace :user do
     resource :dashboard, only: [ :show ]
     resources :sessions, only: [ :index ]
-    end
+  end
 
   authenticate :admin do
     mount SolidErrors::Engine, at: "/solid_errors"
