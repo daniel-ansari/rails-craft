@@ -1,24 +1,98 @@
-# README
+# Rails-craft: Ruby on Rails Starter Kit
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Introduction
 
-Things you may want to cover:
+Rails-craft is a Ruby on Rails starter kit designed to bootstrap your new app with a modern Rails stack.
 
-* Ruby version
+**Keep it simple**
 
-* System dependencies
+The primary goal of Rails-craft is to offer a starter kit that accelerates the process of getting a new Rails application up and running with a modern tech stack and the base feature you need to quickly test a project.
 
-* Configuration
+It started as a recurring need to bootstrap new projects with a modern stack and a set of tools that I like to use. The goal of Rails-craft is to remain simple and minimalistic.
 
-* Database creation
+If you are looking for a feature rich template with payments, Team etc check out [Jumpstart](https://jumpstartrails.com/), [Bullet Train](https://bullettrain.co/) or [Business Class](https://businessclasskit.com/)
 
-* Database initialization
+## Technology Stack
 
-* How to run the test suite
+- **Rails 7.2**: The latest version of the Ruby on Rails framework.
+- **Hotwire**: Turbo 8 with morphing capabilities.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **DaisyUI**: A Tailwind CSS component library for styling and theming.
+- **Authentication**: Implemented with Authentication-zero.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Development Tools
 
-* Deployment instructions
+- **Standard**: Code style enforcement for Ruby and JavaScript.
+- **ERB Lint**: Linter for ERB templates.
+- **Livereload**: Enables live reloading of web pages as you code.
+- **Minitest**: A fast, easy-to-use testing framework for Ruby.
+- **Github Actions**: Continuous integration
 
-* ...
+![Screenshots](https://github.com/daniel-ansari/rails-craft/app/assets/images/screenshots/01.png)
+
+![Screenshots](https://github.com/daniel-ansari/rails-craft/app/assets/images/screenshots/02.png)
+
+## Generators
+
+This starter kit includes custom generators that use the built-in components, streamlining the development process.
+
+## Usage
+
+To use this template for your project, follow these steps:
+
+1. **Clone the Repository**
+
+   ```sh
+   git clone git@github.com:daniel-ansari/rails-craft.git myapp
+   cd myapp
+   ```
+
+2. **Rename the Origin Remote**
+
+   ```sh
+   git remote rename origin rails-craft
+   ```
+
+3. **Add Your Repository**
+
+   ```sh
+   git remote add origin git@github.com:your-account/your-repo.git
+   # Replace with your new Git repository URL
+   ```
+
+4. **Rename the Application**
+
+   Look for DaisyOnRails and daisy_on_rails and replace with your app name (e.g. Myapp)
+
+## Initial Setup
+
+Run `bin/setup` to install Ruby and JavaScript dependencies and setup your database.
+
+```bash
+bin/setup
+```
+
+## Running the Application
+
+To run the application, use the `bin/dev` script.
+
+```bash
+bin/dev
+```
+
+## Merging Updates
+
+To merge changes, merge from the `rails-craft` remote.
+
+```bash
+git fetch rails-craft
+git merge rails-craft/main
+```
+
+## License
+
+Rails-craft is released under the [MIT License](https://opensource.org/licenses/MIT).
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at [github.com/daniel-ansari/rails-craft](https://github.com/daniel-ansari/rails-craft)
