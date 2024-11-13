@@ -62,7 +62,7 @@ To use this template for your project, follow these steps:
 
 4. **Rename the Application**
 
-   Look for Rails Craft and RailsCraft and replace with your app name (e.g. Myapp)
+   Look for Rails Craft, RailsCraft and rails_craft and replace with your app name (e.g. Myapp)
 
 ## Initial Setup
 
