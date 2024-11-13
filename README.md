@@ -28,9 +28,9 @@ If you are looking for a feature rich template with payments, Team etc check out
 - **Minitest**: A fast, easy-to-use testing framework for Ruby.
 - **Github Actions**: Continuous integration
 
-![Screenshots](https://github.com/daniel-ansari/rails-craft/app/assets/images/screenshots/01.png)
+![Screenshots](https://raw.githubusercontent.com/daniel-ansari/rails-craft/refs/heads/main/app/assets/images/screenshots/01.png)
 
-![Screenshots](https://github.com/daniel-ansari/rails-craft/app/assets/images/screenshots/02.png)
+![Screenshots](https://raw.githubusercontent.com/daniel-ansari/rails-craft/refs/heads/main/app/assets/images/screenshots/02.png)
 
 ## Generators
 
